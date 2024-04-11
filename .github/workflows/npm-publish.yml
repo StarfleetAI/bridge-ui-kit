@@ -1,3 +1,5 @@
+name: "Publish library to NPM"
+
 on:
   push:
     branches: main
@@ -6,12 +8,16 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
         with:
-          node-version: "20"
-      - run: npm ci
-      - run: npm test
-      - uses: JS-DevTools/npm-publish@v3
+          version: latest
+      - name: Install dependencies
+        run: pnpm i
+      - name: Build library
+        run: pnpm build:lib
+      - name: Publish to NPM
+        uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.NPM_REGISTRY_TOKEN }}
