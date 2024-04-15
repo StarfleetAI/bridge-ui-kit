@@ -26,8 +26,8 @@ dependencies:
 
 devDependencies:
   '@laynezh/vite-plugin-lib-assets':
-    specifier: ^0.5.21
-    version: 0.5.21
+    specifier: ^0.5.22
+    version: 0.5.22
   '@rushstack/eslint-patch':
     specifier: ^1.8.0
     version: 1.10.2
@@ -522,8 +522,8 @@ packages:
   /@jridgewell/sourcemap-codec@1.4.15:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
 
-  /@laynezh/vite-plugin-lib-assets@0.5.21:
-    resolution: {integrity: sha512-XeOSCwzh0JqMNPchPRX2U/aAcO7S13LAK3GDuBn8T5AuKF5lbeJoUd7iqdlcYfUJjhPwqXoK8UwM1NCoAj1eaA==}
+  /@laynezh/vite-plugin-lib-assets@0.5.22:
+    resolution: {integrity: sha512-2gUL16h1D+AyJV4kG1up6wMAq8UJRttpBdFKgFCR30KYlWbue5n4jsyvCfIdre53qgG2Dd/xzMXdvz1d8tbizg==}
     dependencies:
       escape-string-regexp: 4.0.0
       loader-utils: 3.2.1
