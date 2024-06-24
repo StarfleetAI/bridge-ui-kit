@@ -40,7 +40,7 @@
     "vue3-toastify": "^0.2.1"
   },
   "devDependencies": {
-    "@laynezh/vite-plugin-lib-assets": "^0.5.21",
+    "@laynezh/vite-plugin-lib-assets": "^0.5.23",
     "@rushstack/eslint-patch": "^1.8.0",
     "@tsconfig/node20": "^20.1.4",
     "@types/jsdom": "^21.1.6",
